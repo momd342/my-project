@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أفق المعرفة | Knowledge Horizon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: var(--shadow-hover);
+            border: 1px solid var(--border-color);
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        .form-control {
+            width: 100%;
+            padding: 14px;
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            border-radius: 10px;
+            outline: none;
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            border-color: var(--accent-color);
+            background: white;
+            box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+        }
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+            text-align: center;
+            display: block;
+            text-decoration: none;
+        }
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px rgba(59, 130, 246, 0.3);
+        }
+    </style>
+</head>
+<body class="rtl">
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <nav>
+                <a href="index.html" class="brand">أفق المعرفة</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="books.html">المكتبة</a></li>
+                    <li><a href="about.html">عن المكتبة</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding-top: 150px; padding-bottom: 80px;">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 50px;">اتصل بنا</h1>
+            
+            <div class="contact-form reveal">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>الاسم الكامل</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>البريد الإلكتروني</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>الموضوع</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>الرسالة</label>
+                        <textarea class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">إرسال الرسالة</button>
+                </form>
+            </div>
+
+            <div class="reveal" style="text-align: center; margin-top: 60px; animation-delay: 0.3s">
+                <div style="display: inline-flex; gap: 40px; flex-wrap: wrap; justify-content: center;">
+                    <p style="color: var(--text-secondary);"><i class="fas fa-map-marker-alt" style="color: var(--accent-color);"></i> المدينة التقنية</p>
+                    <p style="color: var(--text-secondary);"><i class="fas fa-phone" style="color: var(--secondary-color);"></i> +966 500 000 000</p>
+                    <p style="color: var(--text-secondary);"><i class="fas fa-envelope" style="color: #f87171;"></i> info@knowledge-horizon.com</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 مكتبة أفق المعرفة. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+</body>
+</html>
